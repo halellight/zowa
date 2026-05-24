@@ -1,7 +1,7 @@
 "use client"
 import Link from "next/link"
 import { useState, useEffect } from "react"
-import { Menu } from "lucide-react"
+
 import { MobileMenu } from "./mobile-menu"
 import { ZowaMotif } from "./zowa-motif"
 import { motion } from "framer-motion"
@@ -80,11 +80,15 @@ export function Header() {
               Start a Project
             </Link>
             <button
-              className="lg:hidden text-[#0F0E13] p-2 cursor-pointer hover:text-[#4D2395] transition-colors"
+              className="lg:hidden w-11 h-11 border border-[#EAE5DB] hover:border-[#4D2395] bg-[#FAF7F2] hover:bg-[#F3EFE7] transition-all duration-300 rounded-none cursor-pointer flex items-center justify-center relative group"
               onClick={() => setIsMobileMenuOpen(true)}
               aria-label="Open menu"
             >
-              <Menu className="w-5 h-5" />
+              <div className="flex flex-col gap-[4px] items-end justify-center w-5">
+                <span className="w-5 h-[1.2px] bg-[#0F0E13] group-hover:bg-[#4D2395] transition-all duration-300 group-hover:translate-y-[-1px]"></span>
+                <span className="w-3 h-[1.2px] bg-[#0F0E13] group-hover:bg-[#4D2395] transition-all duration-300 group-hover:w-5"></span>
+                <span className="w-4.5 h-[1.2px] bg-[#0F0E13] group-hover:bg-[#4D2395] transition-all duration-300 group-hover:translate-y-[1px]"></span>
+              </div>
             </button>
           </div>
         </div>
