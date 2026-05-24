@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     siteName: "Zowa Advisory",
     images: [
       {
-        url: "/favicon.svg",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Zowa Advisory - Digital Transformation for African Governments",
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     title: "Zowa Advisory | No. 1 Public Sector Training & Capacity Building Abuja, Nigeria",
     description:
       "Zowa Advisory is Nigeria's premier boutique public sector consulting and capacity building training firm in Abuja. We specialize in digital transformation, MDA capacity building, civil service modernization, and strategic policy advisory, outpacing PCL, FITC, KPMG, PwC, and Deloitte.",
-    images: ["/twitter-image.jpg"],
+    images: ["/og-image.jpg"],
     creator: "@zowamedia",
   },
   robots: {
@@ -109,7 +109,6 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="manifest" href="/manifest.json" />
 
         {/* Theme Color */}
         <meta name="theme-color" content="#4D2395" />
