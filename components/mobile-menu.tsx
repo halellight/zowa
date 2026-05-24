@@ -48,7 +48,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
     <AnimatePresence>
       {isOpen && (
         <motion.div
-          className="fixed inset-0 z-[100] lg:hidden bg-[#FAF7F2] overflow-y-auto flex flex-col justify-between"
+          className="fixed inset-0 z-[100] lg:hidden bg-[#FAF7F2] overflow-y-auto overflow-x-hidden w-full max-w-full flex flex-col justify-between"
           variants={curtainVariants}
           initial="initial"
           animate="animate"
@@ -134,7 +134,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                 </div>
                 <div>
                   <h4 className="text-[10px] font-bold uppercase tracking-wider text-[#6E6B64] mb-1">Inquiries</h4>
-                  <p className="text-xs text-[#0F0E13]">praiseibec@gmail.com</p>
+                  <p className="text-xs text-[#0F0E13]">zowaadvisory@gmail.com</p>
                 </div>
               </div>
 
@@ -144,7 +144,7 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                 </div>
                 <div>
                   <h4 className="text-[10px] font-bold uppercase tracking-wider text-[#6E6B64] mb-1">Phone</h4>
-                  <p className="text-xs text-[#0F0E13]">+234 812 117 3432</p>
+                  <p className="text-xs text-[#0F0E13]">0707 545 1894</p>
                 </div>
               </div>
             </div>

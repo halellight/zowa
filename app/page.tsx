@@ -239,7 +239,7 @@ export default function ZowaPage() {
       ══════════════════════════════════════════════════════════ */}
       <section className="py-4 px-6 md:px-12 bg-[#FAF7F2] border-b border-[#EAE5DB]">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-[#EAE5DB]">
+          <div className="grid grid-cols-2 md:grid-cols-4 md:divide-x md:divide-[#EAE5DB]">
             <StatItem value={36} suffix="+" label="States Covered" delay={0} />
             <StatItem value={15} suffix="+" label="MDAs Connected" delay={0.1} />
             <StatItem value={25} suffix="+" label="Premium Brands scaled" delay={0.2} />

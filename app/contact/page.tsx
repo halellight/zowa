@@ -26,7 +26,7 @@ export default function ContactPage() {
     
     setStatus("loading")
     try {
-      // Using Web3Forms public API to submit to praiseibec@gmail.com
+      // Using Web3Forms public API to submit to zowaadvisory@gmail.com
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: {
@@ -40,7 +40,7 @@ export default function ContactPage() {
           organization: formData.organization,
           message: formData.message,
           subject: `New Zowa Advisory Inquiry from ${formData.name}`,
-          to: "praiseibec@gmail.com"
+          to: "zowaadvisory@gmail.com"
         })
       })
 
@@ -103,7 +103,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <h3 className="text-xs font-bold uppercase tracking-wider text-[#4D2395] mb-1">Email</h3>
-                <p className="text-sm text-[#5C5952] font-medium">praiseibec@gmail.com</p>
+                <p className="text-sm text-[#5C5952] font-medium">zowaadvisory@gmail.com</p>
               </div>
             </div>
 
@@ -113,7 +113,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <h3 className="text-xs font-bold uppercase tracking-wider text-[#4D2395] mb-1">Phone</h3>
-                <p className="text-sm text-[#5C5952] font-medium">+234 812 117 3432</p>
+                <p className="text-sm text-[#5C5952] font-medium">0707 545 1894</p>
               </div>
             </div>
           </div>
@@ -142,7 +142,7 @@ export default function ContactPage() {
               <CheckCircle2 className="w-16 h-16 text-[#4D2395] animate-bounce" />
               <h3 className="text-2xl font-instrument-serif text-[#0F0E13]">Thank you for reaching out.</h3>
               <p className="text-sm text-[#6E6B64] max-w-sm leading-relaxed">
-                Your strategic inquiry has been successfully sent to Praise. We will review your mandate and contact you shortly.
+                Your strategic inquiry has been successfully sent to Zowa Advisory. We will review your mandate and contact you shortly.
               </p>
               <button 
                 onClick={() => setStatus("idle")}
