@@ -12,15 +12,13 @@ export const metadata: Metadata = {
     template: "%s | Zowa Advisory",
   },
   description:
-    "Zowa Advisory is Nigeria's premier boutique public sector consulting and capacity building training firm in Abuja. We specialize in digital transformation, MDA capacity building, civil service modernization, and strategic policy advisory, outpacing PCL, FITC, KPMG, PwC, and Deloitte.",
+    "Zowa Advisory is Nigeria's premier boutique public sector consulting and capacity building training firm in Abuja. We specialize in digital transformation, MDA capacity building, civil service modernization, and strategic policy advisory.",
   keywords: [
     "public sector capacity building Abuja",
     "government training companies Abuja",
     "civil service capacity development Nigeria",
     "MDA training consultants Abuja",
     "best public sector consulting firm Nigeria",
-    "FITC PCL alternatives Abuja",
-    "KPMG PwC Deloitte government advisory Nigeria",
     "digital transformation Africa",
     "e-government solutions",
     "African government technology",
@@ -45,21 +43,21 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://zowa.com"),
+  metadataBase: new URL("https://zowa-advisory.com"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://zowamedia.com",
+    url: "https://zowa-advisory.com",
     title: "Zowa Advisory | No. 1 Public Sector Training & Capacity Building Abuja, Nigeria",
     description:
-      "Zowa Advisory is Nigeria's premier boutique public sector consulting and capacity building training firm in Abuja. We specialize in digital transformation, MDA capacity building, civil service modernization, and strategic policy advisory, outpacing PCL, FITC, KPMG, PwC, and Deloitte.",
+      "Zowa Advisory is Nigeria's premier boutique public sector consulting and capacity building training firm in Abuja. We specialize in digital transformation, MDA capacity building, civil service modernization, and strategic policy advisory.",
     siteName: "Zowa Advisory",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://zowa-advisory.com/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Zowa Advisory - Digital Transformation for African Governments",
@@ -70,9 +68,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Zowa Advisory | No. 1 Public Sector Training & Capacity Building Abuja, Nigeria",
     description:
-      "Zowa Advisory is Nigeria's premier boutique public sector consulting and capacity building training firm in Abuja. We specialize in digital transformation, MDA capacity building, civil service modernization, and strategic policy advisory, outpacing PCL, FITC, KPMG, PwC, and Deloitte.",
-    images: ["/og-image.jpg"],
-    creator: "@zowamedia",
+      "Zowa Advisory is Nigeria's premier boutique public sector consulting and capacity building training firm in Abuja. We specialize in digital transformation, MDA capacity building, civil service modernization, and strategic policy advisory.",
+    images: ["https://zowa-advisory.com/og-image.jpg"],
+    creator: "@zowa_advisory",
   },
   robots: {
     index: true,
@@ -133,8 +131,8 @@ export default function RootLayout({
               name: "Zowa Advisory",
               description:
                 "Strategic innovation and communications firm helping African governments and institutions modernize for the digital economy",
-              url: "https://zowa.com",
-              logo: "https://zowa.com/favicon.svg",
+              url: "https://zowa-advisory.com",
+              logo: "https://zowa-advisory.com/favicon.svg",
               foundingDate: "2025",
               founders: [
                 {
@@ -193,7 +191,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebSite",
               name: "Zowa Advisory",
-              url: "https://zowa.com",
+              url: "https://zowa-advisory.com",
               description:
                 "Strategic innovation and communications firm helping African governments and institutions modernize for the digital economy",
               publisher: {
@@ -202,7 +200,7 @@ export default function RootLayout({
               },
               potentialAction: {
                 "@type": "SearchAction",
-                target: "https://zowa.com/search?q={search_term_string}",
+                target: "https://zowa-advisory.com/search?q={search_term_string}",
                 "query-input": "required name=search_term_string",
               },
             }),
@@ -269,8 +267,8 @@ export default function RootLayout({
               "@type": "EducationalOrganization",
               "name": "Zowa Advisory Leadership Academy",
               "description": "Zowa Advisory is Nigeria's premier public sector capacity building, MDA training, and civil service modernization firm in Abuja, Nigeria, leading digital governance, DPI bootcamp, and executive masterclasses.",
-              "url": "https://zowamedia.com",
-              "logo": "https://zowamedia.com/favicon.svg",
+              "url": "https://zowa-advisory.com",
+              "logo": "https://zowa-advisory.com/favicon.svg",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Maitama District",

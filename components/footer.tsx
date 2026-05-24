@@ -8,6 +8,7 @@ export function Footer() {
     Pages: [
       { label: "About", href: "/about" },
       { label: "Offerings", href: "/offerings" },
+      { label: "Academy", href: "/academy" },
       { label: "Work", href: "/work" },
       { label: "Thinking", href: "/thinking" },
     ],

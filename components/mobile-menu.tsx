@@ -16,9 +16,10 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
   const menuItems = [
     { n: "01", label: "About", href: "/about" },
     { n: "02", label: "Offerings", href: "/offerings" },
-    { n: "03", label: "Work", href: "/work" },
-    { n: "04", label: "Thinking", href: "/thinking" },
-    { n: "05", label: "Contact Us", href: "/contact" },
+    { n: "03", label: "Academy", href: "/academy" },
+    { n: "04", label: "Work", href: "/work" },
+    { n: "05", label: "Thinking", href: "/thinking" },
+    { n: "06", label: "Contact Us", href: "/contact" },
   ]
 
   // Animation variants

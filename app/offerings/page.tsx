@@ -122,83 +122,57 @@ export default function OfferingsPage() {
       </div>
 
       {/* ══════════════════════════════════════════════════════════
-          CAPACITY DEVELOPMENT & TRAINING MASTERCLASSES
+          ZOWA ACADEMY TEASER BLOCK
       ══════════════════════════════════════════════════════════ */}
       <section className="mt-32 pt-20 border-t border-[#EAE5DB] relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 30, filter: "blur(10px)" }}
-          whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="mb-16 md:mb-20 max-w-4xl"
-        >
-          <div className="flex items-center gap-2.5 mb-4">
-            <ZowaMotif size={12} color="#4D2395" />
-            <p className="text-[#4D2395] text-xs font-semibold tracking-[0.2em] uppercase">Capacity Building</p>
+        <div className="bg-white border border-[#EAE5DB] p-8 md:p-14 relative overflow-hidden shadow-sm">
+          {/* Ambient glow inside card */}
+          <div className="absolute right-0 bottom-0 translate-x-1/4 translate-y-1/4 opacity-[0.01] pointer-events-none text-[#4D2395]">
+            <ZowaMotif size={300} color="#4D2395" />
           </div>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-instrument-serif text-[#0F0E13]">
-            Zowa Academy: Elite <span className="italic text-[#6E6B64]">MDA Capacity Development.</span>
-          </h2>
-          <p className="text-[#6E6B64] text-lg md:text-xl mt-6 leading-relaxed">
-            We don't just deliver advice—we build permanent administrative capacity. Outclassing legacy frameworks (such as FITC, PCL, and traditional consultancies), Zowa Academy conducts state-of-the-art masterclasses explicitly designed for Nigerian Permanent Secretaries, Directors-General, and public officers to execute digital-era mandates.
-          </p>
-        </motion.div>
-
-        {/* Masterclass details grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-          {[
-            {
-              n: "01",
-              title: "Executive Leadership & Policy Synergy",
-              target: "Permanent Secretaries, Directors-General, Commissioners",
-              desc: "A premium, hands-on retreat mapping national e-governance roadmaps, aligning ministerial mandates, and teaching strategic narrative design to cut back-end friction by 70%. Includes professional leather-bound jotters, brass precision instrument pens, and custom reference souvenirs.",
-              metric: "98% Policy Alignment"
-            },
-            {
-              n: "02",
-              title: "Digital Public Infrastructure (DPI) & Interoperability",
-              target: "Directors of ICT, Program Managers, Technical Leads",
-              desc: "A highly rigorous, hands-on bootcamp demystifying national database synchronization, scalable citizen identity registers, transaction ledgers, and zero-trust cybersecurity protocols.",
-              metric: "5,000+ Officers Certified"
-            },
-            {
-              n: "03",
-              title: "Responsible AI & Algorithmic Trust",
-              target: "Planning Directors, Analysts, Policy Advisory Teams",
-              desc: "Masterclass exploring ethical public-sector machine learning workflows, predictive resource allocations, and administrative safeguards. Prepares agencies for national audit readiness.",
-              metric: "No. 1 Rated AI Syllabus"
-            },
-            {
-              n: "04",
-              title: "Strategic Communications & Civic Dialogue",
-              target: "Information Officers, MDA Spokespersons, Media Teams",
-              desc: "Transforming dry government announcements into compelling, highly responsive community engagement programs. Deep-dives into local dialogue mechanics and perception tracking.",
-              metric: "94% Public Trust Gain"
-            }
-          ].map((item, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30, filter: "blur(10px)" }}
-              whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-              transition={{ duration: 0.7, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              className="bg-white border border-[#EAE5DB] p-8 md:p-10 group hover:border-[#4D2395] transition-all duration-300 flex flex-col justify-between"
-            >
+          
+          <div className="max-w-4xl relative z-10">
+            <div className="flex items-center gap-2.5 mb-6">
+              <ZowaMotif size={12} color="#4D2395" />
+              <p className="text-[#4D2395] text-xs font-semibold tracking-[0.2em] uppercase">Zowa Academy</p>
+            </div>
+            
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-instrument-serif text-[#0F0E13] mb-6">
+              Elite MDA Capacity Development & <span className="italic text-[#6E6B64]">Practical Training.</span>
+            </h2>
+            
+            <p className="text-[#6E6B64] text-lg md:text-xl leading-relaxed mb-8">
+              We don't just deliver advice—we build permanent administrative capacity. Zowa Academy conducts highly targeted, practical training programs designed specifically for MDA staff at all levels—from Junior Officers to Permanent Secretaries and Directors-General.
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10 border-t border-[#F5F2EC] pt-8">
               <div>
-                <div className="flex justify-between items-start mb-6">
-                  <span className="text-sm font-semibold tracking-widest text-[#4D2395] uppercase bg-[#F5F2EC] px-3 py-1.5">{item.metric}</span>
-                  <span className="font-instrument-serif text-3xl text-[#4D2395]">0{index + 1}</span>
-                </div>
-                <h3 className="text-xl md:text-2xl font-bold mb-2 text-[#0F0E13] group-hover:text-[#4D2395] transition-colors">{item.title}</h3>
-                <p className="text-xs uppercase tracking-wider text-[#6E6B64] font-semibold mb-6">Target: {item.target}</p>
-                <p className="text-[#5C5952] text-sm md:text-base leading-relaxed mb-6">{item.desc}</p>
+                <p className="text-xs uppercase tracking-wider text-[#4D2395] font-bold mb-3">Management & Leadership</p>
+                <p className="text-[#5C5952] text-sm leading-relaxed">
+                  Practical Strategic HR, developing leadership competencies, high-performance management courses, and organizational change frameworks.
+                </p>
               </div>
-            </motion.div>
-          ))}
+              <div>
+                <p className="text-xs uppercase tracking-wider text-[#4D2395] font-bold mb-3">Controls, Audits & Tech</p>
+                <p className="text-[#5C5952] text-sm leading-relaxed">
+                  Internal controls over financial reporting, auditing structures, practical data analytics, and prompt engineering bootcamps.
+                </p>
+              </div>
+            </div>
+            
+            <Link href="/academy">
+              <motion.button
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                className="group flex items-center gap-3 bg-[#4D2395] hover:bg-[#3C1371] text-white px-7 py-4 text-xs font-semibold uppercase tracking-[0.15em] transition-all duration-200 cursor-pointer rounded-none"
+              >
+                Explore Zowa Academy
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </motion.button>
+            </Link>
+          </div>
         </div>
       </section>
-
-      {/* CTA Box at Bottom */}
       <motion.div
         initial={{ opacity: 0, y: 30, filter: "blur(10px)" }}
         whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}

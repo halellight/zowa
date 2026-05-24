@@ -12,6 +12,12 @@
   }
 }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
+}
+
 /* Override for text selection - Royal Purple Tint */
 ::selection {
   background: rgba(77, 35, 149, 0.12);
