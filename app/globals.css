@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    background-color: #FAF7F2;
+    color: #0F0E13;
+  }
+}
+
+/* Override for text selection - Royal Purple Tint */
+::selection {
+  background: rgba(77, 35, 149, 0.12);
+  color: #4D2395;
+}
+
+.font-satoshi {
+  font-family: "Satoshi", sans-serif;
+}
+
+.font-instrument-serif {
+  font-family: "Instrument Serif", serif;
+}
+
+body {
+  font-family: "Satoshi", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Marquee */
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-33.333%); }
+}
+.animate-marquee {
+  animation: marquee 35s linear infinite;
+}
+
+/* Custom scrollbar - Premium Editorial Warm Gray & Purple Accents */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: #E5DFC8;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4D2395;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 37 33% 97%; /* #FAF7F2 Warm Eggshell White */
+    --foreground: 255 15% 7%; /* #0F0E13 Deep Slate Charcoal */
+    --card: 0 0% 100%;
+    --card-foreground: 255 15% 7%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 255 15% 7%;
+    --primary: 260 62% 36%; /* #4D2395 Royal Purple */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 35 15% 94%; /* #F5F2EC Light Cream */
+    --secondary-foreground: 255 15% 7%;
+    --muted: 35 15% 94%;
+    --muted-foreground: 240 4% 46%;
+    --accent: 260 62% 36%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 38 12% 87%; /* #EAE5DB Sleek Hairline Divider */
+    --input: 38 12% 87%;
+    --ring: 260 62% 36%;
+    --radius: 0rem; /* Executive sharp borders! No rounded corners! */
+    --sidebar-background: 37 33% 97%;
+    --sidebar-foreground: 255 15% 7%;
+    --sidebar-primary: 260 62% 36%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 35 15% 94%;
+    --sidebar-accent-foreground: 255 15% 7%;
+    --sidebar-border: 38 12% 87%;
+    --sidebar-ring: 260 62% 36%;
+  }
+}

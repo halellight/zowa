@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Top Parallelogram Shape -->
+  <path d="M 40 0 L 100 0 L 80.6 48.5 L 65 48.5 Q 50 48.5, 50 28.5 Q 50 48.5, 35 48.5 L 20.6 48.5 Z" fill="#4D2395" />
+  <!-- Bottom Parallelogram Shape -->
+  <path d="M 19.4 51.5 L 35 51.5 Q 50 51.5, 50 71.5 Q 50 51.5, 65 51.5 L 79.4 51.5 L 60 100 L 0 100 Z" fill="#4D2395" />
+</svg>
