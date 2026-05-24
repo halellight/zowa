@@ -23,7 +23,7 @@ export function Header() {
       <MobileMenu isOpen={isMobileMenuOpen} onClose={() => setIsMobileMenuOpen(false)} />
       <motion.header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
-          ? "py-4 px-6 md:px-10 bg-[#FAF7F2]/90 backdrop-blur-md border-b border-[#EAE5DB] shadow-sm"
+          ? "py-4 px-6 md:px-10 bg-[#FAF7F2]/90 backdrop-blur-md  border-[#EAE5DB] shadow-sm"
           : "py-6 px-6 md:px-12 bg-transparent"
           }`}
         initial={{ y: -80, opacity: 0 }}
@@ -57,15 +57,13 @@ export function Header() {
                 <Link
                   key={item.label}
                   href={item.href}
-                  className={`text-xs uppercase tracking-[0.18em] transition-all duration-300 font-semibold cursor-pointer relative group ${
-                    active ? "text-[#0F0E13]" : "text-[#6E6B64] hover:text-[#0F0E13]"
-                  }`}
+                  className={`text-xs uppercase tracking-[0.18em] transition-all duration-300 font-semibold cursor-pointer relative group ${active ? "text-[#0F0E13]" : "text-[#6E6B64] hover:text-[#0F0E13]"
+                    }`}
                 >
                   {item.label}
                   <span
-                    className={`absolute -bottom-1 left-0 h-[2px] bg-[#4D2395] transition-all duration-350 ${
-                      active ? "w-full" : "w-0 group-hover:w-full"
-                    }`}
+                    className={`absolute -bottom-1 left-0 h-[2px] bg-[#4D2395] transition-all duration-350 ${active ? "w-full" : "w-0 group-hover:w-full"
+                      }`}
                   />
                 </Link>
               )
@@ -80,14 +78,14 @@ export function Header() {
               Start a Project
             </Link>
             <button
-              className="lg:hidden w-11 h-11 border border-[#EAE5DB] hover:border-[#4D2395] bg-[#FAF7F2] hover:bg-[#F3EFE7] transition-all duration-300 rounded-none cursor-pointer flex items-center justify-center relative group"
+              className="lg:hidden w-11 h-11 bg-[#FAF7F2] hover:bg-[#F3EFE7] transition-all duration-300 rounded-none cursor-pointer flex items-center justify-center relative group"
               onClick={() => setIsMobileMenuOpen(true)}
               aria-label="Open menu"
             >
               <div className="flex flex-col gap-[4px] items-end justify-center w-5">
                 <span className="w-5 h-[1.2px] bg-[#0F0E13] group-hover:bg-[#4D2395] transition-all duration-300 group-hover:translate-y-[-1px]"></span>
-                <span className="w-3 h-[1.2px] bg-[#0F0E13] group-hover:bg-[#4D2395] transition-all duration-300 group-hover:w-5"></span>
-                <span className="w-4.5 h-[1.2px] bg-[#0F0E13] group-hover:bg-[#4D2395] transition-all duration-300 group-hover:translate-y-[1px]"></span>
+
+                <span className="w-5 h-[1.2px] bg-[#0F0E13] group-hover:bg-[#4D2395] transition-all duration-300 group-hover:translate-y-[1px]"></span>
               </div>
             </button>
           </div>

@@ -34,7 +34,7 @@ export default function ContactPage() {
           Accept: "application/json"
         },
         body: JSON.stringify({
-          access_key: "e9f7ea53-1574-4b55-a0a9-ee3a0f78f654", // Default Web3Forms Key (User can replace or use fallback)
+          access_key: "44d44dc6-46a6-498f-96e3-efce01d9743d", // Zowa Advisory Web3Forms Key
           name: formData.name,
           email: formData.email,
           organization: formData.organization,
