@@ -14,8 +14,8 @@ export function Footer() {
     ],
     Connect: [
       { label: "Contact Us", href: "/contact" },
-      { label: "LinkedIn", href: "https://linkedin.com/company/zowamedia", external: true },
-      { label: "Twitter / X", href: "https://twitter.com/zowamedia", external: true },
+      { label: "LinkedIn", href: "https://linkedin.com/company/zowaadvisory", external: true },
+      { label: "Twitter / X", href: "https://x.com/ZowaAdvisory", external: true },
     ],
   }
 
@@ -62,7 +62,7 @@ export function Footer() {
             <p className="text-[#6E6B64] text-sm leading-relaxed max-w-sm font-medium">
               A boutique consulting firm helping ambitious African governments solve complex development challenges through strategy, AI, and institutional transformation.
             </p>
-            <p className="text-[#8B867A] text-xs font-semibold uppercase mt-8 tracking-wider">Abuja · Serving Pan-Africa</p>
+            <p className="text-[#8B867A] text-xs font-semibold uppercase mt-8 tracking-wider">Serving Pan-African Intrests</p>
           </div>
 
           {/* Links */}

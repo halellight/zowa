@@ -7,7 +7,7 @@ export default function AboutPage() {
   const offerings = [
     {
       title: "Strategic Advisory & Policy",
-      description: "We advise ministers and policymakers on national tech frameworks, AI adoption, and citizen engagement strategies to future-proof governance."
+      description: "We advise policymakers on national frameworks, AI adoption, and citizen engagement strategies to future-proof governance."
     },
     {
       title: "E-Governance Architecture",
@@ -57,17 +57,17 @@ export default function AboutPage() {
           <ZowaMotif size={14} color="#4D2395" />
           <span className="text-[#4D2395] font-semibold tracking-[0.2em] uppercase text-xs">About Zowa Advisory</span>
         </div>
-        
+
         <h1 className="text-5xl md:text-7xl font-instrument-serif mb-8 text-[#0F0E13] leading-[1.08]">
-          Pioneering <span className="italic text-[#4D2395]">purpose-driven</span> <br/> public sector transformation.
+          Pioneering <span className="italic text-[#4D2395]">purpose-driven</span> <br /> public sector transformation.
         </h1>
         <p className="text-xl text-[#6E6B64] max-w-3xl leading-relaxed">
-          We work closely with African governments to elevate Ministries, Departments, and Agencies. Driven by human insight and robust data, we turn aspiration into alignment, potential into performance, and strategic insight into institutional impact.
+          We work closely with public sector institutions to elevate their capacity. Driven by human insight and robust data, we turn aspiration into alignment, potential into performance, and strategic insight into institutional impact.
         </p>
       </motion.div>
 
       {/* Main Narrative / Hero Image Banner */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 40, filter: "blur(10px)" }}
         whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
         transition={{ duration: 0.8 }}
@@ -75,10 +75,10 @@ export default function AboutPage() {
         className="relative w-full aspect-[21/9] rounded-none overflow-hidden mb-32 bg-[#FAF6F0] border border-[#EAE5DB] shadow-sm"
       >
         <div className="absolute inset-0 bg-black/5 z-10" />
-        <img 
-          src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1974&auto=format&fit=crop" 
-          alt="Collaboration inside Zowa Advisory room" 
-          className="w-full h-full object-cover grayscale opacity-90" 
+        <img
+          src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1974&auto=format&fit=crop"
+          alt="Collaboration inside Zowa Advisory room"
+          className="w-full h-full object-cover grayscale opacity-90"
         />
       </motion.div>
 
@@ -94,7 +94,7 @@ export default function AboutPage() {
               Built on <span className="italic text-[#6E6B64]">unwavering</span> principles.
             </h3>
           </div>
-          
+
           <div className="lg:col-span-8 grid grid-cols-1 md:grid-cols-3 gap-8">
             {coreValues.map((val, idx) => (
               <div key={idx} className="space-y-4 bg-white p-6 border border-[#EAE5DB]">

@@ -12,7 +12,7 @@ export default function AcademyPage() {
       level: "Executive Cohort",
       audience: "Permanent Secretaries, Directors-General, Commissioners",
       tagline: "Strategic Governance & Institutional Alignment",
-      description: "Elite, highly practical masterclasses addressing strategic narrative design, ministerial alignment, and operational accountability. Specifically designed for top-tier executives to set standard-setting governance roadmaps.",
+      description: "Elite, highly practical masterclasses addressing strategic narrative design, sector alignment, and operational accountability. Specifically designed for top-tier executives to set standard-setting governance roadmaps.",
       programs: [
         "Strategic Human Resource Management (Strategic HR) for MDAs",
         "Developing Advanced Leadership Competencies",
@@ -40,7 +40,7 @@ export default function AcademyPage() {
       level: "Mid-Level Implementation Cohort",
       audience: "Program Managers, ICT Leads, Technical Officers",
       tagline: "Execution, Interoperability & Evidence-Based Operations",
-      description: "Hands-on implementation bootcamps focused on building robust data pipelines, analytics suites, managing workflows, and connecting legacy databases for seamless digital delivery.",
+      description: "Hands-on implementation bootcamps focused on learning about data pipelines, analytics suites, and managing workflows, for seamless digital delivery.",
       programs: [
         "Practical Data Analytics & Visualizations for MDA Decision Making",
         "E-Governance Interoperability & API Infrastructures",
@@ -54,11 +54,11 @@ export default function AcademyPage() {
       level: "Junior Operations Cohort",
       audience: "Officers, Administrative Staff, Policy Analysts",
       tagline: "Efficiency, Modern Operations & Tech Proficiency",
-      description: "Fast-paced digital bootcamps designed to transition paper-bound administrative teams into modern, digital-first operators, eliminating daily operational friction.",
+      description: "Fast-paced bootcamps designed to transition paper-bound administrative teams into modern, digital-first operators, eliminating daily operational friction.",
       programs: [
         "Modern Workplace Expectations & Administrative Excellence",
         "Prompt Engineering & AI Tools for Daily Civil Service Operations",
-        "Basic Data Hygiene & Secure Ingestion Pipelines",
+        "Basic Data Analytics",
         "Modern Digital Communication Protocols & Administrative Writing"
       ],
       metric: "10x Team Performance Gain"
@@ -105,12 +105,12 @@ export default function AcademyPage() {
           <ZowaMotif size={14} color="#4D2395" />
           <span className="text-[#4D2395] font-semibold tracking-[0.2em] uppercase text-xs">Zowa Academy</span>
         </div>
-        
+
         <h1 className="text-5xl md:text-7xl lg:text-[5rem] font-instrument-serif mb-8 text-[#0F0E13] leading-[1.06]">
-          Practical capacity building <br/> for <span className="italic text-[#4D2395]">high-performance</span> governance.
+          Practical capacity building <br /> for <span className="italic text-[#4D2395]">high-performance</span> governance.
         </h1>
         <p className="text-xl text-[#6E6B64] max-w-3xl leading-relaxed">
-          No theoretical bloat. Just direct, leveled training programs spanning management, auditing, strategic HR, and tech forward operations to turn aspiration into real, permanent institutional capacity.
+          Direct, leveled training programs spanning management, auditing, strategic HR, and tech forward operations to turn aspiration into real, permanent institutional capacity.
         </p>
       </motion.div>
 
@@ -119,7 +119,7 @@ export default function AcademyPage() {
         <h2 className="text-xs font-bold uppercase tracking-[0.25em] text-[#6E6B64] border-b border-[#EAE5DB] pb-4 mb-8">
           Targeted Programs by Career Level
         </h2>
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {cohorts.map((cohort, index) => (
             <motion.div
@@ -181,7 +181,7 @@ export default function AcademyPage() {
               Why public sector professionals <span className="italic text-[#6E6B64]">actually show up.</span>
             </h3>
           </div>
-          
+
           <div className="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-8">
             {practicalValue.map((val, idx) => (
               <div key={idx} className="space-y-4 bg-white p-8 border border-[#EAE5DB] shadow-sm">

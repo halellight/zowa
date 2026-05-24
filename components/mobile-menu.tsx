@@ -117,14 +117,14 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
 
           {/* Bottom Coordinates & Contacts Grid */}
           <div className="border-t border-[#EAE5DB] bg-[#F5F2EC] px-8 py-8 relative z-10">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="flex items-start gap-4">
                 <div className="w-8 h-8 rounded-none border border-[#EAE5DB] flex items-center justify-center shrink-0">
                   <MapPin className="w-3.5 h-3.5 text-[#4D2395]" />
                 </div>
                 <div>
                   <h4 className="text-[10px] font-bold uppercase tracking-wider text-[#6E6B64] mb-1">Office</h4>
-                  <p className="text-xs text-[#0F0E13]">Maitama District, Abuja, Nigeria</p>
+                  <p className="text-xs text-[#0F0E13]">Maitama District, Abuja</p>
                 </div>
               </div>
               
@@ -134,7 +134,17 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                 </div>
                 <div>
                   <h4 className="text-[10px] font-bold uppercase tracking-wider text-[#6E6B64] mb-1">Inquiries</h4>
-                  <p className="text-xs text-[#0F0E13]">partnerships@zowa.advisory</p>
+                  <p className="text-xs text-[#0F0E13]">praiseibec@gmail.com</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-8 h-8 rounded-none border border-[#EAE5DB] flex items-center justify-center shrink-0">
+                  <svg className="w-3.5 h-3.5 text-[#4D2395]" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                </div>
+                <div>
+                  <h4 className="text-[10px] font-bold uppercase tracking-wider text-[#6E6B64] mb-1">Phone</h4>
+                  <p className="text-xs text-[#0F0E13]">+234 812 117 3432</p>
                 </div>
               </div>
             </div>
